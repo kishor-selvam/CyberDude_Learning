@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body class="bg-indigo-900 min-h-screen">
-    <div class="bg-white max-w-lg mx-auto mt-10 rounded p-5 space-y-4">
+    <form id="formOne" class="bg-white max-w-lg mx-auto mt-10 rounded p-5 space-y-4">
       <h1 class="font-semibold text-lg">Request a Courier Pickup!</h1>
       <div class="flex flex-col gap-4">
         <div class="grid grid-cols-2 gap-5">
-          <input type="text" class="form-inputs" placeholder="Name" />
+          <input type="text" class="form-inputs" name="name" placeholder="Name" />
           <input
             type="number"
+            name="phone-number"
             min="0"
             class="form-inputs"
             placeholder="Phone"
@@ -22,7 +23,7 @@
         <input
           type="datetime-local"
           class="form-inputs"
-          name="date"
+          name="pickup-date"
           id="date"
           placeholder="Date"
         />
@@ -30,6 +31,7 @@
           placeholder="Enter your pickup address"
           class="form-inputs"
           id=""
+          name="address"
           cols="10"
           rows="5"
         ></textarea>
@@ -40,8 +42,9 @@
       >
         Create Pickup
       </button>
-    </div>
-    <div class="bg-white max-w-lg mx-auto mt-10 rounded p-5 space-y-4">
+    </form>
+
+    <div class="bg-white max-w-lg mx-auto mt-10 rounded p-5 space-y-4 hidden">
       <h1 class="font-semibold text-lg">Courier Requests</h1>
       <table class="w-full">
         <thead>
