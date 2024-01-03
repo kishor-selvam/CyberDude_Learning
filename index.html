@@ -59,19 +59,19 @@
       </button>
     </form>
 
-    <div class="bg-white max-w-lg mx-auto mt-10 rounded p-5 space-y-4 hidden">
+    <div class="bg-white max-w-2xl mx-auto mt-10 rounded p-5 space-y-4">
       <h1 class="font-semibold text-lg">Courier Requests</h1>
-      <table class="w-full">
+      <table class="w-full" id="courierTable">
         <thead>
           <tr>
-            <th class="border px-5 py-1">Customer</th>
-            <th class="border px-5 py-1">Pickup Date</th>
-            <th class="border px-5 py-1">Address</th>
-            <th class="border px-5 py-1"></th>
+            <th class="border text-left px-5 py-1">Customer</th>
+            <th class="border text-left px-5 py-1">Pickup Date</th>
+            <th class="border text-left px-5 py-1">Address</th>
+            <th class="border text-left px-5 py-1"></th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <!-- <tr>
             <td class="border px-5 py-1">Kishor</td>
             <td class="border px-5 py-1">28 Dec,2023</td>
             <td class="border px-5 py-1">Bengaluru</td>
@@ -82,11 +82,12 @@
                 Delete
               </button>
             </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </div>
 
     <script type="module" src="./asset/js/index.js"></script>
+    <script type="module" src="./asset/js/validation.js"></script>
   </body>
 </html>
